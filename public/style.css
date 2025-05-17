@@ -1,0 +1,265 @@
+/* Bosh sahifa va asosiy uslublar */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Forma */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1.5px solid #2980b9;
+    border-radius: 5px;
+    min-width: 180px;
+    flex: 1 1 180px;
+    transition: border-color 0.3s;
+  }
+  
+  form input:focus {
+    border-color: #27ae60;
+    outline: none;
+  }
+  
+  /* Qo'shish tugmasi - yashil */
+  form button.btn-add {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    flex: 1 1 120px;
+    min-width: 120px;
+  }
+  
+  form button.btn-add:hover {
+    background-color: #1e8449;
+  }
+  
+  /* Jadval konteyneri */
+  .table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Jadval */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #2980b9;
+  }
+  
+  thead {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  thead th {
+    padding: 12px 10px;
+    text-align: left;
+    font-weight: 700;
+    white-space: nowrap;
+    border-right: 1px solid #2980b9;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  thead th:last-child {
+    border-right: 1px solid #2980b9;
+  }
+  
+  tbody td,
+  tfoot td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #2980b9;
+    border-right: 1px solid #2980b9;
+    white-space: nowrap;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f7f9fc;
+  }
+  
+  /* Footer uchun umummiy qator */
+  tfoot {
+    background-color: #ecf0f1;
+    font-weight: 600;
+    border-top: 2px solid #2980b9;
+  }
+  
+  /* Word va PDF tugmalari */
+  .buttons {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Word yuklab olish tugmasi - ko'k */
+  button.btn-doc {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-doc:hover {
+    background-color: #1c5980;
+  }
+  
+  /* PDF yuklab olish tugmasi - qizil */
+  button.btn-pdf {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #c0392b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-pdf:hover {
+    background-color: #922b21;
+  }
+  
+  /* O'chirish tugmasi jadval ichida */
+  tbody button.deleteBtn {
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody button.deleteBtn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+  }
+  
+  /* RESPONSIVLIK */
+  
+  /* Kichik planshetlar */
+  @media (max-width: 798px) {
+    form {
+      gap: 15px;
+    }
+    form input,
+    form button {
+      flex: 1 1 48%;
+    }
+    table {
+      min-width: 600px;
+    }
+  }
+  
+  /* Kichik ekranlar - telefonlar uchun */
+  @media (max-width: 678px) {
+    form input,
+    form button {
+      flex: 1 1 100%;
+    }
+    table {
+      min-width: 100%;
+    }
+  
+    /* Masalan, muhim bo‘lmagan ustunlarni yashirish */
+    .hide-mobile {
+      display: none;
+    }
+  }
+  
+  /* Juda kichik ekranlar - 480px va kichiklari */
+  @media (max-width: 480px) {
+    body {
+      margin: 10px;
+    }
+    form {
+      gap: 12px;
+    }
+    form input,
+    form button {
+      font-size: 0.9rem;
+      padding: 8px;
+      flex: 1 1 100%;
+    }
+    table {
+      font-size: 0.85rem;
+    }
+    thead th,
+    tbody td,
+    tfoot td {
+      padding: 6px 4px;
+    }
+  
+    /* Jadval ustunlarini ko'proq yashirish uchun */
+    th.sold-price,
+    td.sold-price,
+    th.date-added,
+    td.date-added {
+      display: none;
+    }
+  
+    footer {
+      padding: 10px 5px;
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Eng kichik ekranlar - 320px */
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 1.3rem;
+    }
+    form input,
+    form button {
+      font-size: 0.8rem;
+      padding: 8px; /* Paddingni biroz kattalashtirdim */
+    }
+    table {
+      font-size: 0.75rem;
+    }
+  }
+  
