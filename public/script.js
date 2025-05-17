@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
         startY: 15,
         styles: { fontSize: 9 },
         headStyles: { fillColor: [41, 128, 185] }, // ko'k rang
-        footStyles: { fillColor: [236, 240, 241] }, // kulrang footer
+        footStyles: { fillColor: [236, 240, 241] }, // kulrang footer uchun
       });
   
       doc.save("Mahsulotlar.pdf");

@@ -1,4 +1,4 @@
-/* Bosh sahifa va asosiy uslublar */
+/* Umumiy Styles */
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
@@ -39,7 +39,7 @@ body {
     outline: none;
   }
   
-  /* Qo'shish tugmasi - yashil */
+  /* Qo'shish tugmasi */
   form button.btn-add {
     background-color: #27ae60;
     color: white;
@@ -124,7 +124,7 @@ body {
     gap: 10px;
   }
   
-  /* Word yuklab olish tugmasi - ko'k */
+  /* Word yuklab olish tugmasi*/
   button.btn-doc {
     padding: 10px 20px;
     font-weight: bold;
@@ -140,7 +140,7 @@ body {
     background-color: #1c5980;
   }
   
-  /* PDF yuklab olish tugmasi - qizil */
+  /* PDF yuklab olish tugmasi */
   button.btn-pdf {
     padding: 10px 20px;
     font-weight: bold;
@@ -156,7 +156,7 @@ body {
     background-color: #922b21;
   }
   
-  /* O'chirish tugmasi jadval ichida */
+  /* O'chirish tugmasi DELETE */
   tbody button.deleteBtn {
     background-color: #e74c3c;
     border: none;
@@ -172,7 +172,6 @@ body {
     background-color: #c0392b;
   }
   
-  /* Footer */
   footer {
     text-align: center;
     padding: 15px 0;
@@ -205,7 +204,7 @@ body {
       min-width: 100%;
     }
   
-    /* Masalan, muhim bo‘lmagan ustunlarni yashirish */
+    /* muhim bo‘lmagan ustunlarni yashirish uchun qushildi */
     .hide-mobile {
       display: none;
     }
@@ -234,7 +233,7 @@ body {
       padding: 6px 4px;
     }
   
-    /* Jadval ustunlarini ko'proq yashirish uchun */
+    /* Jadval ustunlarini ko'proq yashirish uchun qushildi */
     th.sold-price,
     td.sold-price,
     th.date-added,
@@ -256,7 +255,7 @@ body {
     form input,
     form button {
       font-size: 0.8rem;
-      padding: 8px; /* Paddingni biroz kattalashtirdim */
+      padding: 8px;
     }
     table {
       font-size: 0.75rem;

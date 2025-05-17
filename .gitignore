@@ -1,0 +1,6 @@
+# Mac fayli
+.DS_Store
+
+# IDE yoki editor fayllari
+.vscode/
+.idea/
