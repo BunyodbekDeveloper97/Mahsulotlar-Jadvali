@@ -35,7 +35,7 @@ double click index.html
 
 🗂️ Loyihaning papka tuzilmasi
 
-/mahsulotlar-jadvali
+/Tovarlar va Narxlar
 ├── /public
 │   ├── index.html
 │   ├── style.css
