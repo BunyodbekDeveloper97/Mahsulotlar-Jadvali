@@ -2,58 +2,41 @@
 <html lang="uz">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mahsulotlar Jadvali</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahsulotlar Boshqaruvi</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>Mahsulotlar Jadvali</h1>
+  <div class="container">
+    <h1>Mahsulotlar Boshqaruvi</h1>
 
-  <form id="productForm">
-    <input type="text" id="productName" placeholder="Maxsulot nomi" required />
-    <input type="number" id="productCount" placeholder="Soni" min="1" required />
-    <input type="number" id="purchasePrice" placeholder="Tan Narxi (UZS)" min="0" step="0.01" required />
-    <input type="number" id="soldPrice" placeholder="Sotilgan Narxi (UZS)" min="0" step="0.01" required />
-    <button type="submit" class="btn-add">Qo'shish</button>
-  </form>
+    <form id="product-form">
+      <input type="text" id="product-name" placeholder="Nomi" required />
+      <input type="number" id="quantity" placeholder="Soni" required />
+      <input type="number" id="purchase-price" placeholder="Olish narxi" required />
+      <input type="number" id="sold-price" placeholder="Sotish narxi" required />
+      <button type="submit">Qo‘shish</button>
+    </form>
 
-  <div class="table-container">
-    <table id="productsTable">
+    <table id="product-table">
       <thead>
         <tr>
-          <th>No</th>
-          <th>Maxsulot nomi</th>
+          <th>Nomi</th>
           <th>Soni</th>
-          <th>Tan Narxi</th>
-          <th>Sotilgan Narxi</th>
+          <th>Olish narxi</th>
+          <th>Sotish narxi</th>
           <th>Foyda</th>
           <th>Sana</th>
-          <th>O'chirish</th>
+          <th>O‘chirish</th>
         </tr>
       </thead>
       <tbody></tbody>
-      <tfoot>
-        <tr>
-          <td colspan="3">Umumiy</td>
-          <td id="totalPurchase">UZS 0</td>
-          <td id="totalSold">UZS 0</td>
-          <td id="totalProfit">UZS 0</td>
-          <td colspan="2"></td>
-        </tr>
-      </tfoot>
     </table>
+
+    <p class="totals">Umumiy foyda: <span id="total-profit">0</span> so'm</p>
+    <button id="download-pdf">PDF Yuklab olish</button>
   </div>
 
-  <div class="buttons">
-    <button id="downloadDoc" class="btn-doc">Word Yuklab olish</button>
-    <button id="downloadPDF" class="btn-pdf">PDF Yuklab olish</button>
-  </div>
-
-  <footer>
-    © 2025 RB_GroupCo. Barcha huquqlar himoyalangan.
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/docx@7.2.0/build/index.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
   <script src="script.js"></script>
