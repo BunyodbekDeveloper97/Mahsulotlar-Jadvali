@@ -11,7 +11,7 @@ body {
   
   h1 {
     text-align: center;
-    color: #2c3e50;
+    color: #f78787;
     margin-bottom: 20px;
   }
   
@@ -27,7 +27,7 @@ body {
   form input {
     padding: 10px;
     font-size: 1rem;
-    border: 1.5px solid #2980b9;
+    border: 1.5px solid #f89393;
     border-radius: 5px;
     min-width: 180px;
     flex: 1 1 180px;
@@ -70,11 +70,11 @@ body {
     min-width: 700px;
     background-color: white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border: 1px solid #2980b9;
+    border: 1px solid #ffffff;
   }
   
   thead {
-    background-color: #2980b9;
+    background-color: #f58686;
     color: white;
   }
   
@@ -83,21 +83,21 @@ body {
     text-align: left;
     font-weight: 700;
     white-space: nowrap;
-    border-right: 1px solid #2980b9;
+    border-right: 1px solid #e2d4e4;
     max-width: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
   
   thead th:last-child {
-    border-right: 1px solid #2980b9;
+    border-right: 1px solid #ed8888;
   }
   
   tbody td,
   tfoot td {
     padding: 10px 8px;
-    border-bottom: 1px solid #2980b9;
-    border-right: 1px solid #2980b9;
+    border-bottom: 1px solid #f47d7d;
+    border-right: 1px solid #f47d7d;
     white-space: nowrap;
     max-width: 150px;
     overflow: hidden;
@@ -112,7 +112,7 @@ body {
   tfoot {
     background-color: #ecf0f1;
     font-weight: 600;
-    border-top: 2px solid #2980b9;
+    border-top: 2px solid #e92929;
   }
   
   /* Word va PDF tugmalari */
@@ -158,18 +158,18 @@ body {
   
   /* O'chirish tugmasi DELETE */
   tbody button.deleteBtn {
-    background-color: #e74c3c;
+    background-color: #d5b6b3;
     border: none;
     border-radius: 4px;
     padding: 4px 8px;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     font-weight: 700;
     transition: background-color 0.3s ease;
   }
   
   tbody button.deleteBtn:hover {
-    background-color: #c0392b;
+    background-color: #de1608;
   }
   
   footer {
